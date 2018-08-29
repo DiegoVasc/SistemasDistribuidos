@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tacio.sistemas_distribuidos.appsd.MainActivity">
+
+    <TextView
+        android:id="@+id/btn_p3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/conectar_ip"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="25dp"
+        android:text="Portas"
+        android:textSize="10pt" />
+
+    <EditText
+        android:id="@+id/IP_servidor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/conectar_ip"
+        android:layout_alignParentStart="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/conectar_ip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="154dp"
+        android:text="Conectar" />
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:orientation="vertical"
+        android:id="@+id/radioGroup">
+
+        <RadioButton
+            android:id="@+id/rbnt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/btn_p3"
+            android:layout_below="@+id/btn_p3"
+            android:layout_marginTop="23dp"
+            android:text="9002" />
+
+        <RadioButton
+            android:id="@+id/rbnt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/rbnt1"
+            android:layout_alignBottom="@+id/rbnt1"
+            android:layout_alignEnd="@+id/IP_servidor"
+            android:layout_marginEnd="26dp"
+            android:text="9003" />
+
+        <RadioButton
+            android:id="@+id/rbnt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/rbnt2"
+            android:layout_alignBottom="@+id/rbnt2"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="44dp"
+            android:text="9004" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/radioGroup"
+        android:layout_marginTop="47dp"
+        android:textSize="10pt"
+        android:text="Informe o IP do servidor:" />
+
+
+
+</RelativeLayout>
